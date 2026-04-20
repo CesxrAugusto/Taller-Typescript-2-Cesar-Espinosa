@@ -35,9 +35,20 @@ series.forEach(serie => {
     temporadasTotal += serie.seasons;
     const fila = document.createElement("tr");
     fila.innerHTML = `<td>${serie.id}</td> <td>${serie.name}</td> <td>${serie.channel}</td> <td>${serie.seasons}</td>`;
+    fila.addEventListener("click", () => mostrarDetalle(serie));
     tabla.appendChild(fila);
 });
 average = temporadasTotal / numeroSeries;
 const parrafo = document.createElement("p");
 parrafo.innerHTML = `Seasons Average: ${average}`;
 promedio.appendChild(parrafo);
+function mostrarDetalle(serie) {
+    const imagen_card = document.getElementById("imagen");
+    imagen_card.src = serie.image;
+    const titulo = document.getElementById("titulo");
+    titulo.textContent = serie.name;
+    const description = document.getElementById("descripcion");
+    description.textContent = serie.description;
+    const link = document.getElementById("link");
+    link.href = serie.link;
+}

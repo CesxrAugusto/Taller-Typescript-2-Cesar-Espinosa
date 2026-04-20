@@ -21,22 +21,37 @@
     <br>
 
     <div class = "container-fluid">
-        <div class = "col-7">
-            <div class="row">
-                <table class="table table-striped">
-                        <thead class="thead-light">
-                            <tr>
-                                <th scope="col" class="fw-bold">#</th>
-                                <th scope="col" class="fw-bold">Name</th>
-                                <th scope="col" class="fw-bold">Channel</th>
-                                <th scope="col" class="fw-bold">Seasons</th>
-                            </tr>
-                        </thead>
+        <div class="row">
+            <div class = "col-1"></div>
+            <div class = "col-7">
+                <div class="row">
+                    <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col" class="fw-bold">#</th>
+                                    <th scope="col" class="fw-bold">Name</th>
+                                    <th scope="col" class="fw-bold">Channel</th>
+                                    <th scope="col" class="fw-bold">Seasons</th>
+                                </tr>
+                            </thead>
 
-                        <tbody id="tabla-series"></tbody>
-                </table>
+                            <tbody id="tabla-series"></tbody>
+                    </table>
+                </div>
+                <div class="row" id="promedio-seasons"></div>
             </div>
-            <div class="row" id="promedio-seasons"></div>
+
+            <div class="col-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="Images\Card-Default.png" id="imagen" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title" id="titulo">Título</h5>
+                        <p class="card-text" id="descripcion">Descripción</p>
+                        <a href="#" class="btn btn-primary" id="link">Ver</a>
+                    </div> 
+
+                </div>
+            </div>
         </div>
     </div>
 
